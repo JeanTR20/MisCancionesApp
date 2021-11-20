@@ -30,3 +30,25 @@ class AlbumFechaProvider(BaseProvider):
         new_date = datetime(2019, 2, 28, 00, 00, 00, 00000)
         fecha = [new_date, new_date + timedelta(days=-1), new_date + timedelta(days=-2)]
         return random.choice(fecha)
+
+# datos de la tabla cancion
+
+class CancionTituloProvider(BaseProvider):
+    def cancionTitulo(self):
+        cancionesTitulo = ['Duele el amor', 'She will Be loved', 'Cant hold us', 'Amapolas', 'Tiroteo', 'En esta habitacion', 'Happier']
+        return random.choice(cancionesTitulo)
+
+class CancionMinutosProvider(BaseProvider):
+    def cancionMinutos(self):
+        minutos = [1, 2, 3, 4, 5]
+        return random.choice(minutos)
+
+class CancionSegundosProvider(BaseProvider):
+    def cancionSegundos(self):
+        segundos = [10, 20, 30, 40, 50]
+        return random.choice(segundos)
+
+class CancionCompositorProvider(BaseProvider):
+    def cancionCompositor(self):
+        compositor = ['Leo Rizzi', 'Maluma baby', 'Ben Goldwasser', 'Aleks Syntek', 'Rauw Alejandro', 'Manuel Tadros', 'Samuel Torres']
+        return random.choice(compositor)
