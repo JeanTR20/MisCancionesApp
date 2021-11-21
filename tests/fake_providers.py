@@ -52,3 +52,15 @@ class CancionCompositorProvider(BaseProvider):
     def cancionCompositor(self):
         compositor = ['Leo Rizzi', 'Maluma baby', 'Ben Goldwasser', 'Aleks Syntek', 'Rauw Alejandro', 'Manuel Tadros', 'Samuel Torres']
         return random.choice(compositor)
+
+    #datos de la tabla interprete
+class InterpreteNombreProvider(BaseProvider):
+    def interpreteNombre(self):
+        interpretesNombre = ['Maroon 5', 'Macklemore', 'Leo Rizzi', 'Aleks Syntek', 'Pol Granch', 'Libido', 'Marshmello']
+        return random.choice(interpretesNombre)
+
+class InterpreteTexto_curiosidadesProvider(BaseProvider):
+    def interpreteTexto_curiosidades(self):
+        texto_curiosidades = ['Es una banda musical de pop rock estadounidense', 'rapero estadounidense', 'cantante y compositor nacido en Ibiza']
+        return random.choice(texto_curiosidades)
+
